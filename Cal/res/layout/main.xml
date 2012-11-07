@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<RelativeLayout 
+		android:layout_height="wrap_content"
+		android:id="@+id/relativeLayout1" 
+		android:layout_width="fill_parent">
+
+		<Button 
+			android:id="@+id/prevMonth" 
+			android:text="@string/prevMonth" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+		</Button>
+
+		<TextView 
+			android:id="@+id/dateText"
+			android:text="TextView" 
+			android:textSize="24sp"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_centerVertical="true">
+		</TextView>
+
+		<Button 
+			android:id="@+id/nextMonth" 
+			android:text="@string/nextMonth" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentTop="true" 
+			android:layout_alignParentRight="true">
+		</Button>
+	</RelativeLayout>
+	
+	<LinearLayout 
+		android:id="@+id/linearLayout1" 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:paddingLeft="3dp"
+		android:paddingRight="3dp">
+		
+		<TableRow 
+			android:id="@+id/tableRow1" 
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"> 
+			
+			<TextView 
+				android:id="@+id/Sunday" 
+				android:text="@string/sunday" 
+				android:background="@color/red"
+				android:textSize="16sp"
+				android:gravity="center_horizontal"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:layout_weight="1">
+			</TextView>
+			
+			<TextView 
+				android:id="@+id/Monday" 
+				android:text="@string/monday" 
+				android:background="@color/gray"
+				android:textSize="16sp"
+				android:gravity="center_horizontal"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:layout_weight="1">
+			</TextView>
+			
+			<TextView 
+				android:id="@+id/Tuesay" 
+				android:text="@string/tuesday" 
+				android:background="@color/gray"
+				android:textSize="16sp"
+				android:gravity="center_horizontal"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:layout_weight="1">
+			</TextView>
+			
+			<TextView 
+				android:id="@+id/Wednesday" 
+				android:text="@string/wednesday" 
+				android:background="@color/gray"
+				android:textSize="16sp"
+				android:gravity="center_horizontal"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:layout_weight="1">
+			</TextView>
+			
+			<TextView 
+				android:id="@+id/Thursday" 
+				android:text="@string/thursday" 
+				android:background="@color/gray"
+				android:textSize="16sp"
+				android:gravity="center_horizontal"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:layout_weight="1">
+			</TextView>
+			
+			<TextView 
+				android:id="@+id/Friday" 
+				android:text="@string/friday" 
+				android:background="@color/gray"
+				android:textSize="16sp"
+				android:gravity="center_horizontal"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:layout_weight="1">
+			</TextView>
+			
+			<TextView 
+				android:id="@+id/Saturday" 
+				android:text="@string/saturday" 
+				android:background="@color/blue"
+				android:textSize="16sp"
+				android:gravity="center_horizontal"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:layout_weight="1">
+			</TextView>
+			
+		</TableRow>
+		
+	</LinearLayout>
+	
+	<GridView 
+		android:id="@+id/gridView1" 
+		android:layout_width="wrap_content" android:layout_height="wrap_content">
+	</GridView>
+	
+	<Button 
+		android:text="検索" 
+		android:id="@+id/searchButton" 
+		android:layout_height="wrap_content" 
+		android:layout_width="wrap_content">
+	</Button>
+	
+</LinearLayout>
