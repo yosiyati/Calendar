@@ -88,10 +88,10 @@ public class Cal extends Activity implements OnClickListener,
 
 			@Override
 			public void onClick(View v) {
-				// Intent intent = new Intent();
-				// intent.setClass(Cal.this, Search.class);
-				// intent.setAction(Intent.ACTION_VIEW);
-				// startActivity(intent);
+				 Intent intent = new Intent();
+				 intent.setClass(Cal.this, Search.class);
+				 intent.setAction(Intent.ACTION_VIEW);
+				 startActivity(intent);
 			}
 		});
 	}
